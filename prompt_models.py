@@ -18,7 +18,7 @@ def call_ollama_api(model, prompt):
     "prompt": f"{prompt}",
 		# "system": "You are an undergraduate student participating in a lab experiment. You play a game with an anonymous player in which you simultaneously make a choice. You have to make one choice and one choice only.",
     "stream": False
-}
+	}
 	response = requests.post(ollama_api_url, json=data)
 	return response.json()['response']
 
